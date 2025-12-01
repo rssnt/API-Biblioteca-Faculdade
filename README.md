@@ -1,8 +1,11 @@
 Biblioteca API
+
 API REST simples para gerenciamento de uma biblioteca, desenvolvida com Node.js, Express e Sequelize (SQLite).
-Sobre o Projeto
+
+Sobre o Projeto:
 Este projeto foi criado como trabalho acadêmico e implementa um sistema básico de cadastro de livros, autores e gêneros literários. A API permite realizar operações CRUD completas em todas as entidades.
-Tecnologias Utilizadas
+
+Tecnologias Utilizadas:
 
 Node.js
 Express.js
@@ -10,14 +13,15 @@ Sequelize ORM
 SQLite
 Nodemon (desenvolvimento)
 
-Estrutura do Banco de Dados
+Estrutura do Banco de Dados:
+
 O banco utiliza SQLite e possui três tabelas principais:
 
 Autores: armazena informações dos autores
 Gêneros: categoriza os tipos de literatura
 Livros: registra os livros com relacionamentos para autor e gênero
 
-Como Executar
+Como Executar?
 
 Instale as dependências:
 
