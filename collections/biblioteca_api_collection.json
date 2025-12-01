@@ -1,0 +1,267 @@
+{
+  "info": {
+    "name": "Biblioteca API",
+    "_postman_id": "biblio-colecao-001",
+    "description": "Coleção completa da API Biblioteca com Autores, Gêneros e Livros.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Autores",
+      "item": [
+        {
+          "name": "Criar Autor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Machado de Assis\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/autores",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["autores"]
+            }
+          }
+        },
+        {
+          "name": "Listar Autores",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/autores",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["autores"]
+            }
+          }
+        },
+        {
+          "name": "Buscar Autor por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/autores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["autores", "1"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Autor",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Machado Atualizado\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/autores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["autores", "1"]
+            }
+          }
+        },
+        {
+          "name": "Excluir Autor",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:3000/autores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["autores", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gêneros",
+      "item": [
+        {
+          "name": "Criar Gênero",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Romance\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/generos",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["generos"]
+            }
+          }
+        },
+        {
+          "name": "Listar Gêneros",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/generos",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["generos"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Gênero",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Romance Atualizado\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/generos/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["generos", "1"]
+            }
+          }
+        },
+        {
+          "name": "Excluir Gênero",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:3000/generos/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["generos", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Livros",
+      "item": [
+        {
+          "name": "Criar Livro",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"titulo\": \"Dom Casmurro\",\n    \"autorId\": 1,\n    \"generoId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/livros",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["livros"]
+            }
+          }
+        },
+        {
+          "name": "Listar Livros",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/livros",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["livros"]
+            }
+          }
+        },
+        {
+          "name": "Buscar Livro por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/livros/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["livros", "1"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Livro",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"titulo\": \"Dom Casmurro Revisado\",\n    \"autorId\": 1,\n    \"generoId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/livros/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["livros", "1"]
+            }
+          }
+        },
+        {
+          "name": "Excluir Livro",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:3000/livros/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["livros", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
